@@ -7,7 +7,7 @@ Currently PGN 65288 alarms are supported. Other NMEA2000 alarms can be integrate
 
 An external Buzzer have to be connected.
 
-[Schematics](https://github.com/AK-Homberger/NMEA2000-SeatalkNG-AlarmBuzzer/blob/master/NMEA2000-AlarmBuzzer.png)
+![Schematics](https://github.com/AK-Homberger/NMEA2000-SeatalkNG-AlarmBuzzer/blob/master/NMEA2000-AlarmBuzzer.png)
 
 The wanted alarms have to be defined in the table within the code:
 
