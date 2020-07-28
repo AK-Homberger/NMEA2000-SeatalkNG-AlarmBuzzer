@@ -37,5 +37,13 @@ struct Seatalk_Alarm Seatalk_Alarm_table[] = {
 
 Just change/add/delete alarms as wanted with the Alarm ID from LOOKUP_SEATALK_ALARM_ID
 
+The code is using the NMEA 2000 libraries from Timo Lappalainen (https://github.com/ttlappalainen).
+
+Download and install the following libraries from GitHub link above:
+
+    NMEA2000
+    NMEA2000_esp32
+
+
 # Update
 Verion 0.1 - 28.07.20: Initial version.
