@@ -14,7 +14,7 @@
 
 // NMEA2000 Alarm Buzzer
 //   - Reads SeaTalk-NG Alarm Messages from NMEA2000 bus (PGN 65288)
-//   - Generate external alarm with relay connected to GPIO pin 5
+//   - Generate external alarm with a buzzer 
 
 // Version 0.1, 28.07.2020, AK-Homberger
 
