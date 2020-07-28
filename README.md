@@ -7,7 +7,7 @@ Currently PGN 65288 alarms are supported. Other NMEA2000 alarms can be integrate
 
 An external Buzzer have to be connected to GPIO 5 (with an additional relay).
 
-The wanted alarms have to be defined in able in the code:
+The wanted alarms have to be defined in the table within the code:
 
 struct Seatalk_Alarm Seatalk_Alarm_table[] = {
 
@@ -33,7 +33,7 @@ struct Seatalk_Alarm Seatalk_Alarm_table[] = {
   
 };
 
-Just change/add/delete alarms as wanted.
+Just change/add/delete alarms as wanted with the Alarm ID from LOOKUP_SEATALK_ALARM_ID
 
 # Update
 Verion 0.1 - 28.07.20: Initial version.
