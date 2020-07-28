@@ -5,7 +5,9 @@ See Canboat project for PGN details and alarm types (LOOKUP_SEATALK_ALARM_ID and
 
 Currently PGN 65288 alarms are supported. Other NMEA2000 alarms can be integrated if required (e.g engine related).
 
-An external Buzzer have to be connected to GPIO 5 (with an additional relay).
+An external Buzzer have to be connected.
+
+[Schematics](https://github.com/AK-Homberger/NMEA2000-SeatalkNG-AlarmBuzzer/blob/master/NMEA2000-AlarmBuzzer.png)
 
 The wanted alarms have to be defined in the table within the code:
 
