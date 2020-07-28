@@ -14,14 +14,14 @@
 
 // NMEA2000 Alarm Buzzer
 //   - Reads SeaTalk-NG Alarm Messages from NMEA2000 bus (PGN 65288)
-//   - Generate external alarm with a buzzer 
+//   - Generate external alarm with a buzzer
 
 // Version 0.1, 28.07.2020, AK-Homberger
 
 #define ESP32_CAN_TX_PIN GPIO_NUM_2  // Set CAN TX port to 2 
 #define ESP32_CAN_RX_PIN GPIO_NUM_4  // Set CAN RX port to 4
 
-#define ALARM_PIN 5 // Alarm buzzer relay pin
+#define ALARM_PIN 5 // Alarm buzzer pin
 
 #include <Arduino.h>
 #include <N2kMsg.h>
