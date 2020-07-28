@@ -41,8 +41,8 @@ The code is using the NMEA 2000 libraries from Timo Lappalainen (https://github.
 
 Download and install the following libraries from GitHub link above:
 
-    NMEA2000
-    NMEA2000_esp32
+- NMEA2000
+- NMEA2000_esp32
 
 
 # Update
