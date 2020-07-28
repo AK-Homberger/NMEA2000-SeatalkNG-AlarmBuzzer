@@ -13,7 +13,7 @@
 */
 
 // NMEA2000 Alarm Buzzer
-//   - Reads SeaTalk-NG Alarm Mesages from NMEA2000 bus (PGN 65288)
+//   - Reads SeaTalk-NG Alarm Messages from NMEA2000 bus (PGN 65288)
 //   - Generate external alarm with relay connected to GPIO pin 5
 
 // Version 0.1, 28.07.2020, AK-Homberger
@@ -165,15 +165,16 @@ struct Seatalk_Alarm {
 // Just add a row for any required alarm to the following table with data from LOOKUP_SEATALK_ALARM_ID
 
 struct Seatalk_Alarm Seatalk_Alarm_table[] = {
-  { 1,  0 },
-  { 5,  0 },
-  { 14, 0 },
-  { 20, 0 },
-  { 21, 0 },
-  { 22, 0 },
-  { 29, 0 },
-  { 37, 0 },
-  { 104, 0 },
+  { 1,  0 },  // Shallow depth
+  { 5,  0 },  // Off Course
+  { 14, 0 },  // WP Arrival
+  { 20, 0 },  // Pilot Off Course
+  { 21, 0 },  // Pilot Wind Shift
+  { 22, 0 },  // Pilot Low Battery
+  { 29, 0 },  // Pilot Way Point Advance
+  { 37, 0 },  // GPS Failure
+  { 38, 0 },  // MOB
+  { 104, 0 }, // AIS Dangerous Target
 };
 int Alarms = sizeof(Seatalk_Alarm_table) / sizeof(Seatalk_Alarm); // Number of alarms is calculated atomatically
 
