@@ -10,16 +10,27 @@ An external Buzzer have to be connected to GPIO 5 (with an additional relay).
 The wanted alarms have to be defined in able in the code:
 
 struct Seatalk_Alarm Seatalk_Alarm_table[] = {
+
   { 1,  0 },  // Shallow depth
+  
   { 5,  0 },  // Off Course
+  
   { 14, 0 },  // WP Arrival
+  
   { 20, 0 },  // Pilot Off Course
+  
   { 21, 0 },  // Pilot Wind Shift
+  
   { 22, 0 },  // Pilot Low Battery
+  
   { 29, 0 },  // Pilot Way Point Advance
+  
   { 37, 0 },  // GPS Failure
+  
   { 38, 0 },  // MOB
+  
   { 104, 0 }, // AIS Dangerous Target
+  
 };
 
 Just change/add/delete alarms as wanted.
