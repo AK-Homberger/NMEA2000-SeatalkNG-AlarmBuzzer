@@ -225,7 +225,7 @@ void setup() {
   //NMEA2000.SetForwardOwnMessages();
 
   // If you also want to see all traffic on the bus use N2km_ListenAndNode instead of N2km_NodeOnly below
-  NMEA2000.SetMode(tNMEA2000::N2km_NodeOnly, 52); //N2km_NodeOnly N2km_ListenAndNode
+  NMEA2000.SetMode(tNMEA2000::N2km_ListenOnly, 32); // N2km_ListenOnly. We do not send anything
   NMEA2000.ExtendTransmitMessages(TransmitMessages);
   NMEA2000.ExtendReceiveMessages(ReceiveMessages);
 
