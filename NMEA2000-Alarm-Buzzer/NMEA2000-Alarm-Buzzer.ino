@@ -16,7 +16,7 @@
 //   - Reads SeaTalk-NG Alarm Messages from NMEA2000 bus (PGN 65288)
 //   - Generate external alarm with a buzzer
 
-// Version 0.1, 28.07.2020, AK-Homberger
+// Version 0.2, 29.07.2020, AK-Homberger
 
 #define ESP32_CAN_TX_PIN GPIO_NUM_2  // Set CAN TX port to 2 
 #define ESP32_CAN_RX_PIN GPIO_NUM_4  // Set CAN RX port to 4
@@ -156,15 +156,15 @@
 
 
 // Struct to hold alarm state for any defined alarm
-struct Seatalk_Alarm {
+typedef struct {
   unsigned char ID;
   unsigned char AlarmState;
-};
+} Seatalk_Alarm;
 
 
 // Just add a row for any required alarm to the following table with data from LOOKUP_SEATALK_ALARM_ID
 
-struct Seatalk_Alarm Seatalk_Alarm_table[] = {
+Seatalk_Alarm Seatalk_Alarm_table[] = {
   { 1,  0 },  // Shallow depth
   { 5,  0 },  // Off Course
   { 14, 0 },  // WP Arrival
