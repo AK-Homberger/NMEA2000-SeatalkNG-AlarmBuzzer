@@ -46,6 +46,6 @@ Download and install the following libraries from GitHub link above:
 
 
 # Update
-Verion 0.3 - 04.08.20: Initial version.
+Verion 0.3 - 04.08.20: Changed TX pin from 2 to 5 and buzzer pin from 5 to 15.
 
 Verion 0.1 - 28.07.20: Initial version.
