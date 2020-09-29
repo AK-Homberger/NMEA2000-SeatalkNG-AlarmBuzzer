@@ -1,4 +1,4 @@
-# NMEA2000-SeatalkNG-AlarmBuzzer
+# NMEA2000 SeatalkNG AlarmBuzzer
 This is external buzzer for NMEA2000 / SeaTalk-NG Alarms.
 
 See Canboat project for PGN details and alarm types (LOOKUP_SEATALK_ALARM_ID and PGN 65288): https://github.com/canboat/canboat/blob/master/analyzer/pgn.h
