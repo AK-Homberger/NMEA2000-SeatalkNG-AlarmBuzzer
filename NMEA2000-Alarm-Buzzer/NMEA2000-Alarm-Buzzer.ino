@@ -192,8 +192,8 @@ void setup() {
   uint32_t id = 0;
   int i = 0;
 
-  pinMode(9, ALARM_PIN);
-  digitalWrite(ALARM_PIN, 0);
+  pinMode(ALARM_PIN,OUTPUT);
+  digitalWrite(ALARM_PIN, false);"
 
   esp_efuse_mac_get_default(chipid);
   for (i = 0; i < 6; i++) id += (chipid[i] << (7 * i));
